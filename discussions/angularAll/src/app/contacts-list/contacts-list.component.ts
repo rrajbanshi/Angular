@@ -9,11 +9,19 @@ import { ContactsService } from '../services/contacts.service';
   styleUrls: ['./contacts-list.component.css'],
 })
 export class ContactsListComponent implements OnInit {
-  contacts!: Array<Contact>;
-  constructor(private _contactService: ContactsService, private _router : Router) {}
+  //contacts!: Array<Contact>;
+  contacts: any = [];
+
+  constructor(
+    private _contactService: ContactsService,
+    private _router: Router
+  ) {}
 
   ngOnInit(): void {
-    this.contacts = this._contactService.getContacts();
+    //this.contacts = this._contactService.getContacts();
+   this._contactService.getContacts().subscribe((data)=>{
+    this.contacts = data;
+   })
   }
   id!: number;
   dataSend(data: Contact) {

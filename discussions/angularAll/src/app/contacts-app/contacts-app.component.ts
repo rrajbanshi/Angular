@@ -14,7 +14,8 @@ export class ContactsAppComponent implements OnInit {
 
   allData = CONTACT_DATA;
 
-  contacts!: Array<Contact>;
+  // contacts!: Array<Contact>;
+  contacts: any = [];
   constructor(private _contactService: ContactsService) {
     this.contact = {
       id: 6,
@@ -36,5 +37,6 @@ export class ContactsAppComponent implements OnInit {
 
   ngOnInit(): void {
     this.contacts = this._contactService.getContacts();
+    console.log(this.contacts);
   }
 }
