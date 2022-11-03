@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li *ngFor="let data of contacts" class="list-group-item">
+    <a (click)="dataSend(data)"
+      ><img
+        src="{{ data.image }}"
+        class="rounded-circle"
+        alt="Cinque Terre"
+        width="70"
+        height="70"
+      />
+      <span style="font-weight: 800; padding: 20px"> {{ data.name }}</span></a
+    >
+  </li>
+</ul>

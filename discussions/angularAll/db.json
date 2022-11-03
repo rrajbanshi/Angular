@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "rakesh",
+      "email": "",
+      "phone": "",
+      "birthday": "",
+      "website": "",
+      "image": "https://cdn.pixabay.com/photo/2022/09/18/14/23/baby-7463137_960_720.jpg",
+      "address": {
+        "street": "6554 park lane",
+        "zip": "43378",
+        "city": "Rush",
+        "country": "United States"
+      }
+    },
+    {
+      "id": 2,
+      "name": "raju",
+      "email": "",
+      "phone": "",
+      "birthday": "",
+      "website": "",
+      "image": "https://cdn.pixabay.com/photo/2022/09/18/14/23/baby-7463137_960_720.jpg",
+      "address": {
+        "street": "6554 park lane",
+        "zip": "43378",
+        "city": "Rush",
+        "country": "United States"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
