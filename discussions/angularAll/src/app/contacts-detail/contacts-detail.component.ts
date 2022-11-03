@@ -23,9 +23,4 @@ export class ContactsDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-  // editContact() {
-  //   console.log('hello');
-  //   console.log(this.id);
-  //   this._router.navigate(['contacts', this.id, 'edit']);
-  // }
 }

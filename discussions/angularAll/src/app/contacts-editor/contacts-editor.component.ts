@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Contact } from '../models/contact.model';
 import { ContactsService } from '../services/contacts.service';
 import { NgForm } from '@angular/forms';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-contacts-editor',
