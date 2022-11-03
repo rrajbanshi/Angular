@@ -1,0 +1,11 @@
+<p>contacts-detail-view works!</p>
+
+<app-contacts-detail
+  [contact]="contact"
+  (edit)="navigateToEditor($event)"
+  (back)="navigateToList($event)"
+></app-contacts-detail>
+<p>back -->{{ back }}</p>
+<p>edit --->{{ edit | json }}</p>
+
+<div>{{ dataInService | json }}</div>

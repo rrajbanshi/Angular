@@ -34,7 +34,7 @@ export class ContactsService {
 
   updateContact(contact: Contact): Observable<Contact> {
     const url = `http://localhost:3000/contacts/${contact.id}`;
-    return this._http.put<Contact>(url, contact);
+    return this._http.patch<Contact>(url, contact);
   }
   constructor(private _http: HttpClient) {}
 }

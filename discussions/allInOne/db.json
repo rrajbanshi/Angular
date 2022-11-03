@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1
+    },
+    {
+      "id": 5,
+      "name": "rakesh Rajbanshi",
+      "email": "rrajbanshi@futurensetech.com",
+      "phone": "9855343435",
+      "birthday": "",
+      "website": "",
+      "address": "biratnagar"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "email": "",
+      "phone": "",
+      "birthday": "",
+      "website": "",
+      "address": ""
+    },
+    {
+      "id": 23,
+      "name": "lingamurthy",
+      "email": "",
+      "phone": "",
+      "birthday": "",
+      "website": "",
+      "address": ""
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "rakesh": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,44 @@
+<!-- 
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a routerLink="/home" routerLinkActive="active">home</a>
+        </li>
+        <li>
+          <a routerLink="/users">users</a>
+        </li>
+        <li>
+          <a [routerLink]="['/categories']">categories</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <h2>parent to home component</h2>
+  <app-home [data]="details"></app-home>
+</div>
+
+<div>
+  
+
+
+  <app-home (dataOut)="parentFunc($event)"></app-home>
+</div>
+
+<div>
+  <p>data from child component</p>
+  <p>{{ name }}</p>
+  <p>{{ gender }}</p>
+</div> -->
+
+<h1>app-component</h1>
+
+<router-outlet></router-outlet>

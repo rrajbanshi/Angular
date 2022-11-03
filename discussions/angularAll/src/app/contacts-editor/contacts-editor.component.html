@@ -1,1 +1,65 @@
-<p>contacts-editor works!</p>
+<h1 class="text-center">Edit Details</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <form #contactDetails="ngForm" (ngSubmit)="save(contactDetails)">
+        <div class="form-group">
+          <label for="exampleInputEmail1">ID</label>
+          <input
+            type="number"
+            class="form-control"
+            id="id"
+            name="id"
+            aria-describedby="emailHelp"
+            placeholder="Enter id"
+            [(ngModel)]="contact.id"
+            #id="ngModel"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="enter name"
+            [(ngModel)]="contact.name"
+            #name="ngModel"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            [(ngModel)]="contact.email"
+            #email="ngModel"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">phone</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            name="phone"
+            placeholder="Enter phone"
+            [(ngModel)]="contact.phone"
+            #phone="ngModel"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">save</button>
+        <button (click)="cancel()" type="button" class="btn btn-secondary">
+          cancel
+        </button>
+      </form>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>

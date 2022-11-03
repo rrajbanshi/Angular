@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Contact } from '../models/contact.model';
 import { ContactsService } from '../services/contacts.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-contacts-list',
@@ -19,9 +20,9 @@ export class ContactsListComponent implements OnInit {
 
   ngOnInit(): void {
     //this.contacts = this._contactService.getContacts();
-   this._contactService.getContacts().subscribe((data)=>{
-    this.contacts = data;
-   })
+    this._contactService.getContacts().subscribe((data) => {
+      this.contacts = data;
+    });
   }
   id!: number;
   dataSend(data: Contact) {
