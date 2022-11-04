@@ -24,22 +24,17 @@
     },
     {
       "id": 2,
-      "name": "raju srivastava",
+      "name": "bilagi",
       "email": "",
       "phone": "",
       "birthday": "",
       "website": "",
       "image": "https://cdn.pixabay.com/photo/2022/09/18/14/23/baby-7463137_960_720.jpg",
-      "address": {
-        "street": "6554 park lane",
-        "zip": "43378",
-        "city": "Rush",
-        "country": "United States"
-      }
+      "address": "ejipura"
     },
     {
       "id": 3,
-      "name": "rakesh raj",
+      "name": "rakesh",
       "email": "",
       "phone": "",
       "birthday": "",
@@ -50,7 +45,9 @@
         "zip": "43378",
         "city": "Rush",
         "country": "United States"
-      }
+      },
+      "address.address": "ejipura signal",
+      "address['street']": "6554 park rrr"
     },
     {
       "id": 4,
@@ -76,11 +73,12 @@
       "website": "",
       "image": "https://cdn.pixabay.com/photo/2022/09/18/14/23/baby-7463137_960_720.jpg",
       "address": {
-        "street": "6554 park lane",
+        "street": "111",
         "zip": "43378",
         "city": "Rush",
         "country": "United States"
-      }
+      },
+      "street": "ejipura"
     },
     {
       "id": 6,

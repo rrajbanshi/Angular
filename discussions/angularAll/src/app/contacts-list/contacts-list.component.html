@@ -1,14 +1,42 @@
-<ul class="list-group">
-  <li *ngFor="let data of contacts" class="list-group-item">
-    <a (click)="dataSend(data)"
-      ><img
-        src="{{ data.image }}"
-        class="rounded-circle"
-        alt="Cinque Terre"
-        width="70"
-        height="70"
-      />
-      <span style="font-weight: 800; padding: 20px"> {{ data.name }}</span></a
-    >
-  </li>
-</ul>
+<div class="container">
+  <h1 class="text-center mt-5 mb-5">List of Contacts</h1>
+
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+      <form>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="search contact"
+            (input)="search($event)"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+  <hr />
+  <ul class="list-group">
+    <li *ngFor="let data of contacts$ | async" class="list-group-item">
+      <a (click)="dataSend(data)"
+        ><img
+          src="{{ data.image }}"
+          class="rounded-circle"
+          alt="Cinque Terre"
+          width="70"
+          height="70"
+        />
+        <span style="font-weight: 800; padding: 20px"> {{ data.name }}</span></a
+      >
+    </li>
+  </ul>
+</div>
+
+<!-- <input type="text" (input)="searchtext($event)" /> -->

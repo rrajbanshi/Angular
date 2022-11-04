@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'contacts', component: ContactsListComponent },
   { path: 'contacts/:id', component: ContactsDetailComponent },
   { path: 'contacts/edit/:id', component: ContactsEditorComponent },
-  { path: '**', component: AppComponent },
+  // { path: '**', component: AppComponent },
+  { path: '', redirectTo: '/contacts', pathMatch: 'full' },
 ];
 
 @NgModule({

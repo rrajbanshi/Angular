@@ -25,10 +25,10 @@ export class ContactsEditorComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-  save(contactDetails: NgForm) {
-    // console.log(contactDetails.form.value);
+
+  save(contact: Contact) {
     this._contactService
-      .updateContact(contactDetails.form.value)
+      .updateContact(contact)
       .subscribe((data) => (this.contact = data));
 
     this.gotoContact(this.contact);

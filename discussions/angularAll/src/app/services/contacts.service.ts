@@ -9,6 +9,9 @@ import { Observable } from 'rxjs';
 })
 export class ContactsService {
   allContacts!: Contact[];
+  private apiEndpoint = 'http://localhost:3000';
+
+  constructor(private _http: HttpClient) {}
 
   //static data
   // getContacts() {
@@ -36,5 +39,9 @@ export class ContactsService {
     const url = `http://localhost:3000/contacts/${contact.id}`;
     return this._http.patch<Contact>(url, contact);
   }
-  constructor(private _http: HttpClient) {}
+
+  search(term: string): Observable<Contact[]> {
+    const searchUrl = `${this.apiEndpoint}/contacts/?name=${term}`;
+    return this._http.get<Contact[]>(searchUrl);
+  }
 }
